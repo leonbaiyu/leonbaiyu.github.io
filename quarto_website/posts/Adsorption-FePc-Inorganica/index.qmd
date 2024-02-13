@@ -1,0 +1,13 @@
+---
+title: "Adsorption structure of iron phthalocyanine and titanyl phthalocyanine on Cu (1 1 1)"
+author: "Matthew A Stoodley, Benedikt P Klein, Leon BS Williams, David A Duncan et al"
+date: "2023-11-01"
+categories: [Chemistry, Physics]
+---
+
+:::{.cleanbox}
+The adsorption structure of iron phthalocyanine (FePc) and titanyl phthalocyanine (TiOPc) was studied by a combination of near edge X-ray absorption fine structure (NEXAFS) spectroscopy and normal incidence X-ray standing waves (NIXSW) technique. The FePc results demonstrate that the molecule adsorbs with the Fe metal centre at an adsorption height of 2.44 ± 0.09 Å, its macrocycle plane mostly parallel with the underlying surface and a single adsorption configuration. However, a small distortion of the isoindole groups, with respect to one another, is required to rationalise the results. The TiOPc results similarly indicate that the macrocycle plane is mostly parallel with the underlying surface up to thick multilayer films, yet, in the monolayer regime, the molecule must adsorb in multiple configurations. These configurations are nominally assigned to a mixture of adsorption configurations with some Ti=O bonds pointing towards the surface, and some pointing away. We determine that, in both configurations, the Ti metal centre sits at a similar adsorption height above the surface of 3.00 ± 0.20 Å.
+
+[The full paper is available here](https://www.sciencedirect.com/science/article/pii/S0020169323003043)
+:::
+

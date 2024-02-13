@@ -1,0 +1,8 @@
+/* css styles */
+.pdf {
+    max-width: 100%;
+    width: 600px;
+    height: 600px;
+    border: 10px solid rgba(200,0,0,.2);
+    margin: 0;
+  }

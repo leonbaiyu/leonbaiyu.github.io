@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Leon Williams",
+    "section": "",
+    "text": "Econophysics: Agent-based modelling of markets from kinetic theory of gases and Brownian motion\n\n\n\n\n\n\nphysics\n\n\nsoftware\n\n\n\n\n\n\n\n\n\nMar 14, 2023\n\n\nLeon Williams\n\n\n\n\n\n\n\n\n\n\n\n\nYear in Industry as an Undergraduate Researcher at Diamond Light Source\n\n\n\n\n\n\nchemistry\n\n\nphysics\n\n\nsoftware\n\n\n\n\n\n\n\n\n\nSep 7, 2022\n\n\nLeon Williams\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am a recent Integrated MSci Chemical Physics with Work Placement graduate with first-class honours, from the University of Glasgow, with a strong skillset in physics, programming, and chemistry.\nI have experience in international scientific research, having spent a year working at the Diamond Light Source synchrotron, carrying out advanced chemical analytical techniques, alongside scrutinous data analysis.Through this experience I have been involved in a number of published works.\nFurthermore, I have experience in programming, through my master’s project I built and implemented agent-based models in Python to study economic systems through physics concepts.\nMy academic pathway has been guided by a desire to develop a range of interdisciplinary skills which can be applicable and of use to a variety of challenges. My current career goals are in software development as a result of sustained interest and enjoyment in the programming aspects of my projects and work.\nOther hobbies of mine include: Photography, Ultimate Frisbee, Bikepacking, Art, Piano, Woodworking and Videography.\nThis list changes constantly as I’m experimenting with new experiences that I haven’t tried yet. Who knows what’s next for me!\nFor those with further interest here is my CV:\nUnable to display PDF file. Download instead."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/Masters-thesis/index.html",
+    "href": "posts/Masters-thesis/index.html",
+    "title": "Econophysics: Agent-based modelling of markets from kinetic theory of gases and Brownian motion",
+    "section": "",
+    "text": "Welcome to my Master’s thesis. This webpage provides supporting information for my project, in particular, animations that could not be depicted in the report for the various models. I hope you enjoy them.\nFor those who have stumbled upon this, a “quick” read of my Master’s thesis may be of interest.\nUnable to display PDF file. Download instead.\nA 2D Kinetic Theory of Gases Model was developed in Python, in particular, using the Mesa agent-based modelling package. Some results of this model were visualized and can be seen below:"
+  },
+  {
+    "objectID": "posts/Year-in-Industry/index.html",
+    "href": "posts/Year-in-Industry/index.html",
+    "title": "Year in Industry as an Undergraduate Researcher at Diamond Light Source",
+    "section": "",
+    "text": "In my 4th year of University, I was hired for a competitive undergraduate research position at the Diamond Light Source synchrotron. This international research facility uses a particle accelerator to generate extremely bright X-ray light which can be shone at a variety of things to study their inner workings. Subjects can range from jet turbine blades, to spike proteins on viruses (most famously the COVID virus) revealing their structure and characteristics which is vital for understanding them.\nDuring my year at the Diamond Light Source, I studied 2D materials such as graphene under ultra-high vacuum. This period required rapid learning of both theory and technical skills applied to complex chemical analytical data including spectroscopy, diffraction, and microscopy for studying materials under ultra-high vacuum. I also developed strong skills in Python, MATLAB and FORTRAN for processing and analysing data from instrumentation.\nDuring intensive, week-long experimental periods, problem solving, critical thinking and the ability to improvise, repair and adjust equipment during strict time constraints were essential skills. Results needed to be assessed correctly, often during strenuous night shifts. The short timeframe allotted also required detailed planning, a focus on efficiency, and constant assessment of feasibility and value of each decision such that the most valuable results could be achieved.\nCollaboration was commonplace in my time there, often supporting international partners, including two groups from the Technical University of Munich. This group work was completed in parallel to an independent project using a high-performance computing cluster to run optimisation calculations. I took great enjoyment from the programming aspects of my work, bug fixing scripts and introducing automation for making data analysis more efficient. One highlight of this was discovering a bug in a fundamental software used in 10s of papers, some of which needed conclusions to be reassessed.\nUnable to display PDF file. Download instead."
+  },
+  {
+    "objectID": "posts/Masters-thesis/index.html#d-gas-model-animation-with-energy-distribution",
+    "href": "posts/Masters-thesis/index.html#d-gas-model-animation-with-energy-distribution",
+    "title": "Econophysics: Agent-based modelling of markets from kinetic theory of gases and Brownian motion",
+    "section": "2D Gas model animation with energy distribution",
+    "text": "2D Gas model animation with energy distribution\nThe below animation was created using matplotlib.\n\n\n\nGIF of 2D Gas Visualisation and Velocity Distribution of particles\n\n\n(LHS) Animation visualizing movement of particles within 2D Kinetic Theory of Gases Model. Particles have color based on their energies. (RHS) Parallel visualization of velocity distribution of particles synchronized to the visualization in the LHS. Depicts relaxation from initially equal velocity of all agents to a Maxwell-Boltzmann distribution, indicated by the distribution in orange. Note that the MB distribution was fitted to an averaged final velocity distribution.\n\nUnderstanding 2D Collision dynamics\nThe 2D collision dynamics of this model are explained in the below diagram. The key aspect being rotating the frame of reference to separate the independent components of the velocities of the particles from the components involved in the collision. For further details, consult the thesis:\n\n\n\nDiagram explaining the calculation of 2D elastic collision dynamics\n\n\nA Pseudo-2D Kinetic Theory of Gases Model was developed as an adaptation of the 2D Gas Model, removing its geometric dependence (positions of particles), while attempting to retain the reality of the kinetic theory model."
+  },
+  {
+    "objectID": "posts/Masters-thesis/index.html#velocity-distribution-of-a-pseudo-2d-model",
+    "href": "posts/Masters-thesis/index.html#velocity-distribution-of-a-pseudo-2d-model",
+    "title": "Econophysics: Agent-based modelling of markets from kinetic theory of gases and Brownian motion",
+    "section": "Velocity distribution of a Pseudo 2D Model",
+    "text": "Velocity distribution of a Pseudo 2D Model\nThe resulting velocity distribution from this model is depicted in the diagram below.\n\n\n\nGIF showing instant relaxation of velocity distribution for Pseudo 2D Gas model\n\n\nThe animation clearly shows an instant relaxation from all individuals having identical velocity to forming the shape of the fitted Maxwell-Boltzmann distribution (fitted to an average of the final 10 distributions)."
+  },
+  {
+    "objectID": "posts/Masters-thesis/index.html#energy-distribution-of-a-homogeneous-saving-parameter-simulation",
+    "href": "posts/Masters-thesis/index.html#energy-distribution-of-a-homogeneous-saving-parameter-simulation",
+    "title": "Econophysics: Agent-based modelling of markets from kinetic theory of gases and Brownian motion",
+    "section": "Energy distribution of a Homogeneous Saving Parameter simulation",
+    "text": "Energy distribution of a Homogeneous Saving Parameter simulation\nLater, the model incorporated a saving parameter to emulate saving in economic systems. This essentially allows individuals to save a proportion of their energy/wealth from involvement in a transaction. The animation depicted below is of a simulation in which all agents have the same saving parameter (homogeneous) of 0.5. The consequence of this parameter is that the exponential Maxwell-Boltzmann distribution in energy/money is shifted higher, becoming a peaked energy/money distribution with exponential decay on either side, resembling a Maxwell-Boltzmann distribution in velocity. Evolution of this energy/money distribution is seen in the animation below.\n\n\n\nGIF showing instant relaxation of energy/money distribution for Pseudo 2D Gas model\n\n\nThe animation shows an instant relaxation from all individuals having equal energy/money to forming the Maxwell-Boltzmann-like distribution of the averaged final distribution for a simulation with a homogeneous saving parameter of 0.5. The proposed effect of this saving parameter is to limit the amount of energy/money risked by all parties in an interaction, reducing the average amount gained and lost, thus contracting the peak. This effect is more clear in the results of the thesis."
+  }
+]

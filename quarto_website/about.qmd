@@ -1,0 +1,37 @@
+---
+title: "About"
+image: profile_img.jpg
+about:
+  template: jolla
+  image-shape: rounded
+  image-width: 50%
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+    - icon: github
+      text: Github
+      href: https://github.com
+
+---
+:::{.cleanbox}
+I am a recent Integrated MSci Chemical Physics with Work Placement graduate with first-class honours, from the University of Glasgow, with a strong skillset in physics, programming, and chemistry.
+
+I have experience in international scientific research, having spent a year working at the Diamond Light Source synchrotron, carrying out advanced chemical analytical techniques, alongside scrutinous data analysis.Through this experience I have been involved in a number of published works.
+
+Furthermore, I have experience in programming, through my master’s project I built and implemented agent-based models in Python to study economic systems through physics concepts.
+
+My academic pathway has been guided by a desire to develop a range of interdisciplinary skills which can be applicable and of use to a variety of challenges. My current career goals are in software development as a result of sustained interest and enjoyment in the programming aspects of my projects and work.
+
+Other hobbies of mine include: Photography, Ultimate Frisbee, Bikepacking, Art, Piano, Woodworking and Videography.
+
+This list changes constantly as I’m experimenting with new experiences that I haven’t tried yet. Who knows what’s next for me!
+:::
+
+:::{.cleanbox}
+For those with further interest here is my CV:
+:::
+
+:::{.cleanbox}
+{{< pdf Leon_Williams_CV_Graduate.pdf class=pdf >}}
+:::
