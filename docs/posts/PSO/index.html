@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Leon Williams">
+<meta name="dcterms.date" content="2022-09-07">
 
-<title>Leon Williams</title>
+<title>Leon Williams - Particle Swarm Optimisation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,28 +22,46 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./favicon.ico" rel="icon">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,35 +89,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-date','listing-categories','listing-tags','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -129,17 +120,17 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Leon Williams</span>
     </a>
   </div>
@@ -150,7 +141,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -171,175 +162,83 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Particle Swarm Optimisation</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Chemistry</div>
+                <div class="quarto-category">Physics</div>
+                <div class="quarto-category">Software</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Leon Williams </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">September 7, 2022</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Chemistry">Chemistry <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Physics">Physics <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Software">Software <span class="quarto-category-count">(3)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../..\posts/PSO/Flock-of-birds.jpg" class="img-fluid figure-img"></p>
+<figcaption>Flock of Birds</figcaption>
+</figure>
+</div>
+<div class="cleanbox">
+<p>The particle swarm optimisation takes influence from the search patterns of swarming organisms, who will individually search whilst relaying information to other members of the swarm. Each individual will remember relayed information and relay some of their own to improve the speed and quality of search. In the PSO algorithm, a host of variables (e.g.&nbsp;relaxation heights, lattice parameters) will be entered along with bounds for those variables, limiting their range, to then produce a range of starting calculations, unique for each of the <span class="math inline">\(20-40\)</span> individuals. Individual calculations will begin from a variation on the supplied starting parameters so as to randomise starting points. Functionally, each searching individual will remember the best fit that it is calculated (<span class="math inline">\(X(i)_{local}\)</span>) and the best fit it has been informed of from other individuals (<span class="math inline">\(X(i)_{global}\)</span>). Together, these are used to determine the parameters/location in variable hyperspace of the subsequent iteration, for each individual, through the following equations:</p>
+</div>
+<p><span class="math display">\[\begin{equation}\label{PSO_primary}
+    V_{X(i)} = c_p P_p V_{X(i)} + c_{local} P_{local} dX(i)_{local} + c_{global}P_{global}dX(i)_{global}
+\end{equation}\]</span> <br> <span class="math display">\[\begin{equation}\label{PSO_local_param}
+    dX(i)_{local}=X(i)_{local}-X(i),
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}\label{PSO_global_param}
+    dX(i)_{global}=X(i)_{global}-X(i),
+\end{equation}\]</span></p>
+<div class="cleanbox">
+<p>The first equation defines the variation of the parameter set in the next iteration, <span class="math inline">\(V_{X(i)}\)</span>, and can be split into three terms: The individual’s momentum, <span class="math inline">\(c_pP_pV_{X(i)}\)</span>, this term controls the dependence on the most recent calculation parameters, <span class="math inline">\(V_{X(i)}\)</span>, and can be thought of as its velocity through the variable hyperspace; its Nostalgia, <span class="math inline">\(c_{local}P_{local}dX(i)_{local}\)</span>, the term leading the fit towards the individual’s best found fit; and its Optimism, the term tending the fit towards global best fit that it has been informed of. <span class="math inline">\(X(i)\)</span> is the current parameter set, defining the location of the individual in variable hyperspace; <span class="math inline">\(X(i)_{local}\)</span> is the location of the best found fit of the individual, and <span class="math inline">\(X(i)_{global}\)</span> is the location of the informed best fit. The “distance” between the individual and its best found, <span class="math inline">\(dX(i)_{local}\)</span>, or best informed <span class="math inline">\(dX(i)_{global}\)</span> is proportional to how quickly an individual moves towards those points. The <span class="math inline">\(P\)</span> prefactors take random values between 0 and 1 to introduce randomness is the optimisation and prevent premature convergence and convergence between individuals. Meanwhile the <span class="math inline">\(C\)</span> prefactors are weighting factors that control the dominance of each of the terms in . The importance of these prefactors is vital, for example, <span class="math inline">\(C_P\)</span>, if too large, will give the individual too much momentum that it will never stabilise into a minima; whereas <span class="math inline">\(C_{local}\)</span> and <span class="math inline">\(C_{global}\)</span> are kept at similar values and not too small to allow the individual to escape local minima and explore surrounding regions.</p>
+<p>A key parameter not included in any of these equations is (K), the number of randomly selected individuals that will inform the individual of their local best-found fit. This one-way passage of information directly controls how quickly convergence will occur. Too small, and information will not be passed on effectively and convergence will be too slow. Too large, and convergence will occur too early, before the true global minima is found <span class="citation" data-cites="DAD_Thesis PSO_PhD">(<a href="#ref-DAD_Thesis" role="doc-biblioref">Duncan 2012</a>; <a href="#ref-PSO_PhD" role="doc-biblioref">Duncan, Choi, and Woodruff 2012</a>)</span>.</p>
+</div>
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Chemistry,Physics" data-listing-date-sort="1698796800000" data-listing-file-modified-sort="1707906203171" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="173">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Adsorption-FePc-Inorganica/index.html" class="no-external">Adsorption structure of iron phthalocyanine and titanyl phthalocyanine on Cu (1 1 1)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Adsorption-FePc-Inorganica/index.html" class="no-external"></a>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-DAD_Thesis" class="csl-entry" role="listitem">
+Duncan, D. A. 2012. <span>“Adsorbate Structure Determination Using Energy Scanned Photoelectron Diffraction.”</span> <em>Thesis</em>.
 </div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Chemistry'); return false;">
-Chemistry
+<div id="ref-PSO_PhD" class="csl-entry" role="listitem">
+Duncan, D. A., J. I. J. Choi, and D. P. Woodruff. 2012. <span>“Global Search Algorithms in Surface Structure Determination Using Photoelectron Diffraction.”</span> <em>Surface Science</em> 606 (3): 278–84. https://doi.org/<a href="https://doi.org/10.1016/j.susc.2011.10.003">https://doi.org/10.1016/j.susc.2011.10.003</a>.
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('Physics'); return false;">
-Physics
-</div>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Adsorption-FePc-Inorganica/index.html" class="no-external">
-<div class="listing-date">
-Nov 1, 2023
-</div>
-<div class="listing-author">
-Matthew A Stoodley, Benedikt P Klein, Leon BS Williams, David A Duncan et al
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Physics,Software" data-listing-date-sort="1678752000000" data-listing-file-modified-sort="1707906203249" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="501">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Masters-thesis/index.html" class="no-external">Econophysics: Agent-based modelling of markets from kinetic theory of gases and Brownian motion</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Masters-thesis/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Physics'); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Software'); return false;">
-Software
-</div>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Masters-thesis/index.html" class="no-external">
-<div class="listing-date">
-Mar 14, 2023
-</div>
-<div class="listing-author">
-Leon Williams
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Chemistry,Physics" data-listing-date-sort="1668038400000" data-listing-file-modified-sort="1707906203249" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="201">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Polycyclic_graphene_APL/index.html" class="no-external">Adsorption structure of iron phthalocyanine and titanyl phthalocyanine on Cu (1 1 1)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Polycyclic_graphene_APL/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Chemistry'); return false;">
-Chemistry
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Physics'); return false;">
-Physics
-</div>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Polycyclic_graphene_APL/index.html" class="no-external">
-<div class="listing-date">
-Nov 10, 2022
-</div>
-<div class="listing-author">
-Benedikt P Klein, Matthew A. Stoodley Leon BS Williams, David A Duncan et al
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Chemistry,Physics,Software" data-listing-date-sort="1662505200000" data-listing-file-modified-sort="1707908014858" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="482">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/PSO/index.html" class="no-external">Particle Swarm Optimisation</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/PSO/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Chemistry'); return false;">
-Chemistry
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Physics'); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Software'); return false;">
-Software
-</div>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/PSO/index.html" class="no-external">
-<div class="listing-date">
-Sep 7, 2022
-</div>
-<div class="listing-author">
-Leon Williams
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="Chemistry,Physics,Software" data-listing-date-sort="1662505200000" data-listing-file-modified-sort="1707906203295" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="298">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Year-in-Industry/index.html" class="no-external">Year in Industry as an Undergraduate Researcher at Diamond Light Source</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Year-in-Industry/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Chemistry'); return false;">
-Chemistry
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Physics'); return false;">
-Physics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Software'); return false;">
-Software
-</div>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Year-in-Industry/index.html" class="no-external">
-<div class="listing-date">
-Sep 7, 2022
-</div>
-<div class="listing-author">
-Leon Williams
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

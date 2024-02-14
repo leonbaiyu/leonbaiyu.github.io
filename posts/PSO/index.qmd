@@ -1,0 +1,29 @@
+---
+title: "Particle Swarm Optimisation"
+author: "Leon Williams"
+date: "2022-09-07"
+bibliography: ref.bib
+categories: [Chemistry, Physics, Software]
+---
+![Flock of Birds](/posts/PSO/Flock-of-birds.jpg)
+
+:::{.cleanbox}
+The particle swarm optimisation takes influence from the search patterns of swarming organisms, who will individually search whilst relaying information to other members of the swarm. Each individual will remember relayed information and relay some of their own to improve the speed and quality of search. In the PSO algorithm, a host of variables (e.g. relaxation heights, lattice parameters) will be entered along with bounds for those variables, limiting their range, to then produce a range of starting calculations, unique for each of the $20-40$ individuals. Individual calculations will begin from a variation on the supplied starting parameters so as to randomise starting points. Functionally, each searching individual will remember the best fit that it is calculated ($X(i)_{local}$) and the best fit it has been informed of from other individuals ($X(i)_{global}$). Together, these are used to determine the parameters/location in variable hyperspace of the subsequent iteration, for each individual, through the following equations:
+:::
+\begin{equation}\label{PSO_primary}
+    V_{X(i)} = c_p P_p V_{X(i)} + c_{local} P_{local} dX(i)_{local} + c_{global}P_{global}dX(i)_{global}
+\end{equation}
+<br/>
+\begin{equation}\label{PSO_local_param}
+    dX(i)_{local}=X(i)_{local}-X(i),
+\end{equation}
+
+\begin{equation}\label{PSO_global_param}
+    dX(i)_{global}=X(i)_{global}-X(i),
+\end{equation}
+
+:::{.cleanbox}
+The first equation defines the variation of the parameter set in the next iteration, $V_{X(i)}$, and can be split into three terms: The individual's momentum, $c_pP_pV_{X(i)}$, this term controls the dependence on the most recent calculation parameters, $V_{X(i)}$, and can be thought of as its velocity through the variable hyperspace; its Nostalgia, $c_{local}P_{local}dX(i)_{local}$, the term leading the fit towards the individual's best found fit; and its Optimism, the term tending the fit towards global best fit that it has been informed of. $X(i)$ is the current parameter set, defining the location of the individual in variable hyperspace; $X(i)_{local}$ is the location of the best found fit of the individual, and $X(i)_{global}$ is the location of the informed best fit. The "distance" between the individual and its best found, $dX(i)_{local}$, or best informed $dX(i)_{global}$ is proportional to how quickly an individual moves towards those points. The $P$ prefactors take random values between 0 and 1 to introduce randomness is the optimisation and prevent premature convergence and convergence between individuals. Meanwhile the $C$ prefactors are weighting factors that control the dominance of each of the terms in \textbf{Equation \ref{PSO_primary}}. The importance of these prefactors is vital, for example, $C_P$, if too large, will give the individual too much momentum that it will never stabilise into a minima; whereas $C_{local}$ and $C_{global}$ are kept at similar values and not too small to allow the individual to escape local minima and explore surrounding regions.
+
+A key parameter not included in any of these equations is \(K\), the number of randomly selected individuals that will inform the individual of their local best-found fit. This one-way passage of information directly controls how quickly convergence will occur. Too small, and information will not be passed on effectively and convergence will be too slow. Too large, and convergence will occur too early, before the true global minima is found [@DAD_Thesis; @PSO_PhD].
+:::
