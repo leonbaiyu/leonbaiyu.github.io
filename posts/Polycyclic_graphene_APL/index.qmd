@@ -1,9 +1,14 @@
 ---
-title: "Adsorption structure of iron phthalocyanine and titanyl phthalocyanine on Cu (1 1 1)"
+title: "Using polycyclic aromatic hydrocarbons for graphene growth on Cu(111) under ultra-high vacuum"
 author: "Benedikt P Klein, Matthew A. Stoodley Leon BS Williams, David A Duncan et al"
 date: "2022-11-10"
 categories: [Chemistry, Physics]
 ---
+
+
+:::{.cleanbox}
+![Both pyrene (a) and azupyrene (b) react to form graphene (c) when deposited onto a Cu(111) surface held at 1000 K. Note that pyrene has an alternant topology with four 6-membered rings, while azupyrene possesses a non-alternant topology and consists of two 5-membered and two 7-membered rings.](/posts/Polycyclic_graphene_APL/pyrene-azupyrene-graphene.jpeg)
+:::
 
 :::{.cleanbox}
 Ultra-high vacuum deposition of the polycyclic aromatic hydrocarbons azupyrene and pyrene onto a Cu(111) surface held at a temperature of 1000 K is herein shown to result in the formation of graphene. The presence of graphene was proven using scanning tunneling microscopy, x-ray photoelectron spectroscopy, angle-resolved photoemission spectroscopy, Raman spectroscopy, and low energy electron diffraction. The precursors, azupyrene and pyrene, are comparatively large aromatic molecules in contrast to more commonly employed precursors like methane or ethylene. While the formation of the hexagonal graphene lattice could naively be expected when pyrene is used as a precursor, the situation is more complex for azupyrene. In this case, the non-alternant topology of azupyrene with only 5- and 7-membered rings must be altered to form the observed hexagonal graphene lattice. Such a rearrangement, converting a non-alternant topology into an alternant one, is in line with previous reports describing similar topological alterations, including the isomerizWation of molecular azupyrene to pyrene. The thermal synthesis route to graphene, presented here, is achievable at comparatively low temperatures and under ultra-high vacuum conditions, which may enable further investigations of the growth process in a strictly controlled and clean environment that is not accessible with traditional precursors.

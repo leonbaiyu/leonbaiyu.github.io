@@ -2,11 +2,18 @@
 title: "Year in Industry as an Undergraduate Researcher at Diamond Light Source"
 author: "Leon Williams"
 date: "2022-09-07"
+bibliography: ref.bib
 categories: [Chemistry, Physics, Software]
 ---
+![Diamond Light Source Synchrotron](/posts/Year-in-Industry/Diamond.jpg)
 
 :::{.cleanbox}
-In my 4th year of University, I was hired for a competitive undergraduate research position at the Diamond Light Source synchrotron. This international research facility uses a particle accelerator to generate extremely bright X-ray light which can be shone at a variety of things to study their inner workings. Subjects can range from jet turbine blades, to spike proteins on viruses (most famously the COVID virus) revealing their structure and characteristics which is vital for understanding them.
+In my 4th year of University, I was hired for a competitive undergraduate research position at the Diamond Light Source synchrotron. This international research facility uses a pzarticle accelerator to generate extremely bright X-ray light which can be shone at a variety of things to study their inner workings. Subjects can range from jet turbine blades, to spike proteins on viruses (most famously the COVID virus) revealing their structure and characteristics which is vital for understanding them.
+:::
+
+![Inside the Synchrotron Ring](/posts/Year-in-Industry/In-the-ring.jpg)
+
+:::{.cleanbox}
 
 During my year at the Diamond Light Source, I studied 2D materials such as graphene under ultra-high vacuum. This period required rapid learning of both theory and technical skills applied to complex chemical analytical data including spectroscopy, diffraction, and microscopy for studying materials under ultra-high vacuum. I also developed strong skills in Python, MATLAB and FORTRAN for processing and analysing data from instrumentation. 
 

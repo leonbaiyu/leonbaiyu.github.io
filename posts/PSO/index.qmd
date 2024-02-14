@@ -5,7 +5,7 @@ date: "2022-09-07"
 bibliography: ref.bib
 categories: [Chemistry, Physics, Software]
 ---
-![Flock of Birds](/posts/PSO/Flock-of-birds.jpg)
+![Flock of birds showing a curved trajectory by following their beighbours](/posts/PSO/Flock-of-birds.jpg)
 
 :::{.cleanbox}
 The particle swarm optimisation takes influence from the search patterns of swarming organisms, who will individually search whilst relaying information to other members of the swarm. Each individual will remember relayed information and relay some of their own to improve the speed and quality of search. In the PSO algorithm, a host of variables (e.g. relaxation heights, lattice parameters) will be entered along with bounds for those variables, limiting their range, to then produce a range of starting calculations, unique for each of the $20-40$ individuals. Individual calculations will begin from a variation on the supplied starting parameters so as to randomise starting points. Functionally, each searching individual will remember the best fit that it is calculated ($X(i)_{local}$) and the best fit it has been informed of from other individuals ($X(i)_{global}$). Together, these are used to determine the parameters/location in variable hyperspace of the subsequent iteration, for each individual, through the following equations:
