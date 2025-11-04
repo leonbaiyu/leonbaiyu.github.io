@@ -27,9 +27,11 @@ leonbaiyu.github.io/
 
 ### Prerequisites
 
-1. **Install Quarto**: Download from [quarto.org](https://quarto.org/docs/get-started/)
+1. **Install Quarto**: Download from [quarto.org](https://quarto.org/docs/get-started/). 
 2. **Git**: Ensure you have Git installed for version control
 3. **Text Editor**: VS Code, RStudio, or any markdown-capable editor
+
+For Quarto install, make sure that if you're using VSCode, you install the extension then restart VSCode. After which quarto commands should be available in the terminal.
 
 ### Making Your First Edit
 
