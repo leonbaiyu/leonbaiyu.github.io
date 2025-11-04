@@ -1,0 +1,16 @@
+---
+title: "Probing the role of surface termination in the adsorption of azupyrene on copper"
+author: "Benedikt P Klein, Matthew A Stoodley, Leon BS Williams, David A Duncan et al"
+date: "2024-02-26"
+categories: [Chemistry, Physics]
+---
+
+:::{.cleanbox}
+![Structural models resulting from the DFT HSE06 + MBD-NL calculations for azupyrene on (a) Cu(100), (b) Cu(110) and (c) Cu(111) in both top (a–c) and side views (d–f). Copper, yellow and grey coloured spheres correspond to the first, second and third layers of Cu atoms respectively; black spheres are C atoms, white spheres are H atoms.](/posts/Probing-Surface-Azupyrene/azupyrene-on-cu-111.png)
+:::
+
+:::{.cleanbox}
+The role of the inorganic substrate termination, within the organic–inorganic interface, has been well studied for systems that contain strong localised bonding. However, how varying the substrate termination affects coordination to delocalised electronic states, like that found in aromatic molecules, is an open question. Azupyrene, a non-alternant polycyclic aromatic hydrocarbon, is known to bind strongly to metal surfaces through its delocalised π orbitals, thus yielding an ideal probe into delocalised surface-adsorbate interactions. Normal incidence X-ray standing wave (NIXSW) measurements and density functional theory calculations are reported for the adsorption of azupyrene on the (111), (110) and (100) surface facets of copper to investigate the dependence of the adsorption structure on the substrate termination. Structural models based on hybrid density functional theory calculations with non-local many-body dispersion yield excellent agreement with the experimental NIXSW results. No statistically significant difference in the azupyrene adsorption height was observed between the (111) and (100) surfaces. On the Cu(110) surface, the molecule was found to adsorb 0.06 ± 0.04 Å closer to the substrate than on the other surface facets. The most energetically favoured adsorption site on each surface, as determined by DFT, is subtly different, but in each case involved a configuration where the aromatic rings were centred above a hollow site, consistent with previous reports for the adsorption of small aromatic molecules on metal surfaces.
+[The full paper is available here](https://pubs.rsc.org/en/content/articlehtml/2024/nr/d3nr04690g#fn2)
+:::
+
