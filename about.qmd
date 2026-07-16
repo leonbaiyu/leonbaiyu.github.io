@@ -15,15 +15,13 @@ about:
 
 ---
 :::{.cleanbox}
-I am a recent Integrated MSci Chemical Physics with Work Placement graduate with first-class honours, from the University of Glasgow, with a strong skillset in physics, programming, and chemistry.
+I am an experienced graduate in Integrated MSci Chemical Physics with Work Placement graduate with first-class honours, from the University of Glasgow, with a strong skillset in engineering, physics, programming, and chemistry.
 
-I have experience in international scientific research, having spent a year working at the Diamond Light Source synchrotron, carrying out advanced chemical analytical techniques, alongside scrutinous data analysis.Through this experience I have been involved in a number of published works.
+ I have experience in broad scientific and engineering research environments, having spent time working at esteemed institutions such as the European Space Agency, Diamond Light Source synchrotron and at Sonomatic Ltd. I have experience spanning novel guidance and navigation algorithms for lunar landing, advanced chemical analytical and ultra-high vacuum techniques, and applying machine learning to optimising integrity testing systems. Through this experience I have been involved in a number of published works that are outlined elsewhere on this site.
 
-Furthermore, I have experience in programming, through my master’s project I built and implemented agent-based models in Python to study economic systems through physics concepts.
+My academic pathway has been guided by a desire to develop a range of interdisciplinary skills which can be applicable and of use to a variety of challenges. My current career goals are open minded and I am looking for opportunities to apply my skills in a variety of environments, with a particular interest in space exploration and robotics.
 
-My academic pathway has been guided by a desire to develop a range of interdisciplinary skills which can be applicable and of use to a variety of challenges. My current career goals are in software development as a result of sustained interest and enjoyment in the programming aspects of my projects and work.
-
-Other hobbies of mine include: Photography, Ultimate Frisbee, Bikepacking, Art, Piano, Woodworking and Videography.
+Other hobbies of mine include: Photography, Ultimate Frisbee, Photography, Acrobatics, Bikepacking, Art, Piano, Woodworking and Videography.
 
 This list changes constantly as I’m experimenting with new experiences that I haven’t tried yet. Who knows what’s next for me!
 :::
@@ -33,5 +31,5 @@ For those with further interest here is my CV:
 :::
 
 :::{.cleanbox}
-{{< pdf Leon_Williams_CV_Graduate.pdf class=pdf >}}
+{{< pdf Leon_Williams_Technical_CV.pdf class=pdf >}}
 :::

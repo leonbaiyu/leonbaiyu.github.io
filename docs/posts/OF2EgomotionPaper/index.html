@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Matthew A Stoodley, Benedikt P Klein, Leon BS Williams, David A Duncan et al">
-<meta name="dcterms.date" content="2023-11-01">
+<meta name="author" content="Sean Cowan, Pietro Fanti, Leon B. S. Williams, Chit Hong Yam, Kaneyasu Asakuma, Yuichiro Nada, Dario Izzo">
+<meta name="dcterms.date" content="2026-05-16">
 
-<title>Adsorption structure of iron phthalocyanine and titanyl phthalocyanine on Cu (1 1 1) – Leon Baiyu Shen Williams</title>
+<title>Vision-Guided Optic Flow Navigation for Small Lunar Missions – Leon Baiyu Shen Williams</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -124,10 +124,12 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Adsorption structure of iron phthalocyanine and titanyl phthalocyanine on Cu (1 1 1)</h1>
+      <h1 class="title">Vision-Guided Optic Flow Navigation for Small Lunar Missions</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Chemistry</div>
-                <div class="quarto-category">Physics</div>
+                <div class="quarto-category">Engineering</div>
+                <div class="quarto-category">Software</div>
+                <div class="quarto-category">Robotics</div>
+                <div class="quarto-category">Space</div>
               </div>
                   </div>
   </div>
@@ -138,14 +140,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Matthew A Stoodley, Benedikt P Klein, Leon BS Williams, David A Duncan et al </p>
+               <p>Sean Cowan, Pietro Fanti, Leon B. S. Williams, Chit Hong Yam, Kaneyasu Asakuma, Yuichiro Nada, Dario Izzo </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">November 1, 2023</p>
+        <p class="date">May 16, 2026</p>
       </div>
     </div>
     
@@ -167,14 +169,14 @@ ul.task-list li input[type="checkbox"] {
 <div class="cleanbox">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../../posts/Adsorption-FePc-Inorganica/FePc-Adsorbed.jpg" class="img-fluid figure-img"></p>
-<figcaption>Adsorption structure of iron phthalocyanine and titanyl phthalocyanine on Cu (1 1 1)</figcaption>
+<p><img src="../../posts/OF2EgomotionPaper/ispace-trajectory.png" class="img-fluid figure-img"></p>
+<figcaption>Composite illustration of the end-to-end lunar descent trajectory provided by ispace, combining orbital transfer and landing phases. Frames along the trajectory display the corresponding optical flow fields, showing increasing flow magnitudes as altitude decreases while velocity remains high. Flow intensity diminishes only during the final braking and touchdown phase. The lunar surface texture is included for visualization purposes.</figcaption>
 </figure>
 </div>
 </div>
 <div class="cleanbox">
-<p>The adsorption structure of iron phthalocyanine (FePc) and titanyl phthalocyanine (TiOPc) was studied by a combination of near edge X-ray absorption fine structure (NEXAFS) spectroscopy and normal incidence X-ray standing waves (NIXSW) technique. The FePc results demonstrate that the molecule adsorbs with the Fe metal centre at an adsorption height of 2.44 ± 0.09 Å, its macrocycle plane mostly parallel with the underlying surface and a single adsorption configuration. However, a small distortion of the isoindole groups, with respect to one another, is required to rationalise the results. The TiOPc results similarly indicate that the macrocycle plane is mostly parallel with the underlying surface up to thick multilayer films, yet, in the monolayer regime, the molecule must adsorb in multiple configurations. These configurations are nominally assigned to a mixture of adsorption configurations with some Ti=O bonds pointing towards the surface, and some pointing away. We determine that, in both configurations, the Ti metal centre sits at a similar adsorption height above the surface of 3.00 ± 0.20 Å.</p>
-<p><a href="https://www.sciencedirect.com/science/article/pii/S0020169323003043">The full paper is available here</a></p>
+<p>Private lunar missions are faced with the challenge of robust autonomous navigation while operating under stringent constraints on mass, power, and computational resources. This work proposes a motion-field inversion framework that uses optical flow and rangefinder-based depth estimation as a lightweight CPU-based solution for egomotion estimation during lunar descent. We extend classical optical flow formulations by integrating them with depth modeling strategies tailored to the geometry for lunar/planetary approach, descent, and landing—specifically, planar and spherical terrain approximations parameterized by a laser rangefinder. Motion field inversion is performed through a least-squares framework, using sparse optical flow features extracted via the pyramidal Lucas-Kanade algorithm. We verify our approach using synthetically generated lunar images over the challenging terrain of the lunar south pole, using CPU budgets compatible with small lunar landers. The results demonstrate accurate velocity estimation from approach to landing, with sub-10% error for complex terrain and on the order of 1% for more typical terrain, as well as performances suitable for real-time applications. This framework shows promise for enabling robust, lightweight onboard navigation for small lunar missions.</p>
+<p><a href="https://arxiv.org/pdf/2511.17720">The full paper is available here</a></p>
 </div>
 
 

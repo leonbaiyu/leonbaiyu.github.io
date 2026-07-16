@@ -1,0 +1,19 @@
+---
+title: "Event-based lunar optical flow egomotion estimation challenge: design and results of the ELOPE competition"
+author: "Pietro Fanti, Leon B. S. Williams, Ondřej Dvořák, Marcus Märtens, Tat-Jun Chin, Hongbo Ji, Bofei Chen, Dongyu Xie, Kaifan Qiao, Bohao Li, Nils Einecke, Subramanian Arumugam, Amulya Ratna Padhy, Sumeet Kumar Rath, Swati Sonal Mahapatra & Dario Izzo"
+date: "2026-04-17"
+categories: [Engineering, Software, Robotics, Space]
+image: "/posts/ELOPEPaper/event_stream.png"
+---
+
+:::{.cleanbox}
+![Visualization of a segment of the event stream associated with the divert trajectory D1-10,
+shown together with three corresponding image frames from which the events were derived](/posts/ELOPEPaper/event_stream.png)
+:::
+
+:::{.cleanbox}
+Event-based vision is a promising technology with incredible potential for future space exploration. The Event-based Lunar Optical flow Egomotion estimation (ELOPE) Challenge aims at evaluating and comparing approaches for lunar landing egomotion estimation using data from a single event-based camera. This work is based on the ELOPE Dataset, which is the first publicly available event-based camera dataset for lunar landing. Over 44 teams participated, with 21 reaching the final leaderboard. After submitting 132 solutions, only the top three teams achieved performance surpassing the frame-based baseline. By focusing on realistic South Pole landing geometries and illumination conditions, the challenge directly targets guidance and navigation scenarios relevant to upcoming polar missions. The main contribution of this paper is the comparison of these top three competitors' submissions and a broader analysis of the main challenges in neuromorphic vision for autonomous lunar landing.
+
+[The full paper is available here](https://www.nature.com/articles/s44453-026-00033-0)
+:::
+
