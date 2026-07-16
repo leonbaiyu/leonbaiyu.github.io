@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Pietro Fanti, Leon B. S. Williams, Ondřej Dvořák, Marcus Märtens, Tat-Jun Chin, Hongbo Ji, Bofei Chen, Dongyu Xie, Kaifan Qiao, Bohao Li, Nils Einecke, Subramanian Arumugam, Amulya Ratna Padhy, Sumeet Kumar Rath, Swati Sonal Mahapatra &amp; Dario Izzo">
+<meta name="dcterms.date" content="2026-04-17">
 
-<title>Leon Baiyu Shen Williams</title>
+<title>Event-based lunar optical flow egomotion estimation challenge: design and results of the ELOPE competition – Leon Baiyu Shen Williams</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,26 +28,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./favicon.ico" rel="icon">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-a666afb95015e49032ba9b4dc107e1bf.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-bbb5e92c9ea583116e6c2f212402a945.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-a666afb95015e49032ba9b4dc107e1bf.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-bbb5e92c9ea583116e6c2f212402a945.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,77 +73,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-date','listing-categories','listing-tags','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Leon Baiyu Shen Williams</span>
     </a>
   </div>
@@ -154,11 +96,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Leon_Williams_Technical_CV.pdf"> 
+    <a class="nav-link" href="../../Leon_Williams_Technical_CV.pdf"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item compact">
@@ -179,255 +121,67 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block"></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Event-based lunar optical flow egomotion estimation challenge: design and results of the ELOPE competition</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Engineering</div>
+                <div class="quarto-category">Software</div>
+                <div class="quarto-category">Robotics</div>
+                <div class="quarto-category">Space</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Pietro Fanti, Leon B. S. Williams, Ondřej Dvořák, Marcus Märtens, Tat-Jun Chin, Hongbo Ji, Bofei Chen, Dongyu Xie, Kaifan Qiao, Bohao Li, Nils Einecke, Subramanian Arumugam, Amulya Ratna Padhy, Sumeet Kumar Rath, Swati Sonal Mahapatra &amp; Dario Izzo </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">April 17, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(9)</span></div><div class="category" data-category="Q2hlbWlzdHJ5">Chemistry <span class="quarto-category-count">(6)</span></div><div class="category" data-category="RW5naW5lZXJpbmc=">Engineering <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UGh5c2ljcw==">Physics <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Um9ib3RpY3M=">Robotics <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U29mdHdhcmU=">Software <span class="quarto-category-count">(5)</span></div><div class="category" data-category="U3BhY2U=">Space <span class="quarto-category-count">(2)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<div class="cleanbox">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../posts/ELOPEPaper/event_stream.png" class="img-fluid figure-img"></p>
+<figcaption>Visualization of a segment of the event stream associated with the divert trajectory D1-10, shown together with three corresponding image frames from which the events were derived</figcaption>
+</figure>
+</div>
+</div>
+<div class="cleanbox">
+<p>Event-based vision is a promising technology with incredible potential for future space exploration. The Event-based Lunar Optical flow Egomotion estimation (ELOPE) Challenge aims at evaluating and comparing approaches for lunar landing egomotion estimation using data from a single event-based camera. This work is based on the ELOPE Dataset, which is the first publicly available event-based camera dataset for lunar landing. Over 44 teams participated, with 21 reaching the final leaderboard. After submitting 132 solutions, only the top three teams achieved performance surpassing the frame-based baseline. By focusing on realistic South Pole landing geometries and illumination conditions, the challenge directly targets guidance and navigation scenarios relevant to upcoming polar missions. The main contribution of this paper is the comparison of these top three competitors’ submissions and a broader analysis of the main challenges in neuromorphic vision for autonomous lunar landing.</p>
+<p><a href="https://www.nature.com/articles/s44453-026-00033-0">The full paper is available here</a></p>
+</div>
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="RW5naW5lZXJpbmclMkNTb2Z0d2FyZSUyQ1JvYm90aWNzJTJDU3BhY2U=" data-listing-date-sort="1778853600000" data-listing-file-modified-sort="1784181582050" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="226">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/OF2EgomotionPaper/index.html" class="no-external">Vision-Guided Optic Flow Navigation for Small Lunar Missions</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RW5naW5lZXJpbmc='); return false;">Engineering</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">Software</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Um9ib3RpY3M='); return false;">Robotics</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U3BhY2U='); return false;">Space</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/OF2EgomotionPaper/index.html" class="no-external">
-<div class="listing-date">
-May 16, 2026
-</div>
-<div class="listing-author">
-Sean Cowan, Pietro Fanti, Leon B. S. Williams, Chit Hong Yam, Kaneyasu Asakuma, Yuichiro Nada, Dario Izzo
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="RW5naW5lZXJpbmclMkNTb2Z0d2FyZSUyQ1JvYm90aWNzJTJDU3BhY2U=" data-listing-date-sort="1776348000000" data-listing-file-modified-sort="1784181654765" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/ELOPEPaper/index.html" class="no-external">Event-based lunar optical flow egomotion estimation challenge: design and results of the ELOPE competition</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RW5naW5lZXJpbmc='); return false;">Engineering</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">Software</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Um9ib3RpY3M='); return false;">Robotics</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U3BhY2U='); return false;">Space</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/ELOPEPaper/index.html" class="no-external">
-<div class="listing-date">
-Apr 17, 2026
-</div>
-<div class="listing-author">
-Pietro Fanti, Leon B. S. Williams, Ondřej Dvořák, Marcus Märtens, Tat-Jun Chin, Hongbo Ji, Bofei Chen, Dongyu Xie, Kaifan Qiao, Bohao Li, Nils Einecke, Subramanian Arumugam, Amulya Ratna Padhy, Sumeet Kumar Rath, Swati Sonal Mahapatra &amp; Dario Izzo
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Q2hlbWlzdHJ5JTJDUGh5c2ljcw==" data-listing-date-sort="1757340000000" data-listing-file-modified-sort="1784146520630" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="162">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/One-Step-Graphene-Synthesis/index.html" class="no-external">One-step synthesis of graphene containing topological defects</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2hlbWlzdHJ5'); return false;">Chemistry</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/One-Step-Graphene-Synthesis/index.html" class="no-external">
-<div class="listing-date">
-Sep 9, 2025
-</div>
-<div class="listing-author">
-Benedikt P Klein, Matthew A Stoodley, Leon BS Williams, David A Duncan et al
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Q2hlbWlzdHJ5JTJDUGh5c2ljcw==" data-listing-date-sort="1708866000000" data-listing-file-modified-sort="1784146520631" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="282">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Probing-Surface-Azupyrene/index.html" class="no-external">Probing the role of surface termination in the adsorption of azupyrene on copper</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2hlbWlzdHJ5'); return false;">Chemistry</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Probing-Surface-Azupyrene/index.html" class="no-external">
-<div class="listing-date">
-Feb 26, 2024
-</div>
-<div class="listing-author">
-Benedikt P Klein, Matthew A Stoodley, Leon BS Williams, David A Duncan et al
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="Q2hlbWlzdHJ5JTJDUGh5c2ljcw==" data-listing-date-sort="1698757200000" data-listing-file-modified-sort="1784146520582" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="185">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Adsorption-FePc-Inorganica/index.html" class="no-external">Adsorption structure of iron phthalocyanine and titanyl phthalocyanine on Cu (1 1 1)</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2hlbWlzdHJ5'); return false;">Chemistry</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Adsorption-FePc-Inorganica/index.html" class="no-external">
-<div class="listing-date">
-Nov 1, 2023
-</div>
-<div class="listing-author">
-Matthew A Stoodley, Benedikt P Klein, Leon BS Williams, David A Duncan et al
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="UGh5c2ljcyUyQ1NvZnR3YXJl" data-listing-date-sort="1678712400000" data-listing-file-modified-sort="1784146520629" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="501">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Masters-thesis/index.html" class="no-external">Econophysics: Agent-based modelling of markets from kinetic theory of gases and Brownian motion</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">Software</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Masters-thesis/index.html" class="no-external">
-<div class="listing-date">
-Mar 14, 2023
-</div>
-<div class="listing-author">
-Leon Williams
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="Q2hlbWlzdHJ5JTJDUGh5c2ljcw==" data-listing-date-sort="1667998800000" data-listing-file-modified-sort="1784146520630" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="246">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Polycyclic_graphene_APL/index.html" class="no-external">Using polycyclic aromatic hydrocarbons for graphene growth on Cu(111) under ultra-high vacuum</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2hlbWlzdHJ5'); return false;">Chemistry</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Polycyclic_graphene_APL/index.html" class="no-external">
-<div class="listing-date">
-Nov 10, 2022
-</div>
-<div class="listing-author">
-Benedikt P Klein, Matthew A. Stoodley Leon BS Williams, David A Duncan et al
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="Q2hlbWlzdHJ5JTJDUGh5c2ljcyUyQ1NvZnR3YXJl" data-listing-date-sort="1662472800000" data-listing-file-modified-sort="1784146520630" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="496">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/PSO/index.html" class="no-external">Particle Swarm Optimisation</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2hlbWlzdHJ5'); return false;">Chemistry</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">Software</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/PSO/index.html" class="no-external">
-<div class="listing-date">
-Sep 7, 2022
-</div>
-<div class="listing-author">
-Leon Williams
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-categories="Q2hlbWlzdHJ5JTJDUGh5c2ljcyUyQ1NvZnR3YXJl" data-listing-date-sort="1662472800000" data-listing-file-modified-sort="1784146520659" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Year-in-Industry/index.html" class="no-external">Year in Industry as an Undergraduate Researcher at Diamond Light Source</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2hlbWlzdHJ5'); return false;">Chemistry</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">Software</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Year-in-Industry/index.html" class="no-external">
-<div class="listing-date">
-Sep 7, 2022
-</div>
-<div class="listing-author">
-Leon Williams
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

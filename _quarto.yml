@@ -3,11 +3,13 @@ project:
   output-dir: docs
 
 website:
-  title: "Leon Williams"
+  title: "Leon Baiyu Shen Williams"
   favicon: favicon.ico
   navbar:
     right:
       - about.qmd
+      - text: "CV"
+        href: "Leon_Williams_Technical_CV.pdf"
       - icon: github
         href: https://github.com/leonbaiyu/
       - icon: linkedin
